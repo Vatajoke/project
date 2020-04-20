@@ -38,7 +38,14 @@ penSize(3)
 brushColor("white")
 circle(435, 180, 7)
 
-
-
-
+penSize(5)
+penColor("brown")
+line(90, 220, 90, 335)
+penSize(1)
+penColor("orange")
+brushColor("orange")
+polygon([(30, 220), (150, 220), (90, 180)])
+penColor("black")
+for i in range(30, 150, 15):
+    line(90, 180, i, 220)
 run()
