@@ -270,7 +270,7 @@ def point(x, y, col=-1):
     return pt
 
 
-def line(x1, y1, x2, y2):
+def line(x1: object, y1: object, x2: object, y2: object) -> object:
     x1, y1 = transformCoord(x1, y1)
     x2, y2 = transformCoord(x2, y2)
     line = _C.create_line(x1, y1, x2, y2, fill=_penColor, width=_penSize)
