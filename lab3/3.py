@@ -16,6 +16,14 @@ def window(x1, y1, x2, y2):
     line(x1, y_midle, x2, y_midle)
 
 
+def threads(x, y, R):
+    penColor("black")
+    penSize(1)
+    brushColor("grey")
+    circle(x, y, R)
+
+    polyline([(x, y), (x-10, y+10), (x-15, y)])
+
 brushColor(95, 52, 13)
 rectangle(0, 0, 500, 250)
 brushColor(125, 102, 8)
@@ -24,6 +32,8 @@ rectangle(0, 250, 500, 600)
 window(120, 20, 240, 200)
 window(320, 20, 440, 200)
 window(-60, 20, 60, 200)
+
+threads(200, 400, 50)
 
 
 run()
